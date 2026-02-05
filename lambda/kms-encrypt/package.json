@@ -1,0 +1,17 @@
+{
+  "name": "kms-encrypt",
+  "version": "1.0.0",
+  "description": "KMS encrypt function for PostgreSQL integration",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "package": "npm run build && zip -r ../kms-encrypt.zip dist node_modules package.json"
+  },
+  "dependencies": {
+    "@aws-sdk/client-kms": "^3.400.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
